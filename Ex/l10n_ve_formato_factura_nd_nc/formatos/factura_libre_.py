@@ -91,7 +91,7 @@ class AccountMove(models.Model):
         resultado=dia+"/"+mes+"/"+ano
         return resultado
 
-    def doc_cedula(self,aux):
+    """def doc_cedula(self,aux):
         #nro_doc=self.partner_id.vat
         busca_partner = self.env['res.partner'].search([('id','=',aux)])
         for det in busca_partner:
@@ -124,7 +124,7 @@ class AccountMove(models.Model):
         if tipo_doc=="p":
             tipo_doc="P"
         resultado=str(tipo_doc)+"-"+str(nro_doc)
-        return resultado
+        return resultado"""
 
     
 
