@@ -41,13 +41,13 @@
             <!--menuitem name="Libro Ventas" parent="account.menu_finance_reports" id="account.libro_ventas" action="action_account_common_menu_libro_ventas" sequence="6"/-->
 
             <menuitem
-            name="Venta dar"
+            name="Venta."
             id="menu_book_sale"
             parent="account.menu_finance_reports"
             sequence="41"
             />
             <menuitem
-                name="Libro de Ventas darrell"
+                name="Libro de Ventas."
                 id="account.libro_ventas"
                 action="action_account_common_menu_libro_ventas"
                 parent="menu_book_sale"
