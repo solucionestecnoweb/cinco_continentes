@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
 
 			<xpath expr="//page[@name='other_info']" position="before">
-			  <page string="Resumen IVA por Alicuota dar" attrs="{'invisible': [('move_type', '=', 'entry')]}">
+			  <page string="Resumen IVA por Alicuota." attrs="{'invisible': [('move_type', '=', 'entry')]}">
 			    <group string="Resumen IVA por Alicuota">
                     <!--field name="tax_id"/-->
                     <field name="alicuota_line_ids" nolabel="1" readonly="True">
