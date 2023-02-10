@@ -200,10 +200,10 @@
                     <tr style="font-size:12px;">
                       
                       <td><div align="left"><t t-esc="o.product_id.name"/></div></td>
-                      <td><div align="center"><t t-esc="o.integer_format(o.quantity)"/></div></td>
-                      <td><div align="center"><t t-esc="o.float_format(o.fact_div_line(o.price_unit))"/></div></td>
+                      <td><div align="right"><t t-esc="o.integer_format(o.quantity)"/></div></td>
+                      <td><div align="right"><t t-esc="o.float_format(o.fact_div_line(o.price_unit))"/></div></td>
                      
-                      <td><div align="center"><t t-esc="o.float_format(o.fact_div_line(o.price_subtotal))"/>
+                      <td><div align="right"><t t-esc="o.float_format(o.fact_div_line(o.price_subtotal))"/>
 
                           <t t-set="acum_subtotal" t-value="acum_subtotal+o.price_subtotal"/></div></td>
 
