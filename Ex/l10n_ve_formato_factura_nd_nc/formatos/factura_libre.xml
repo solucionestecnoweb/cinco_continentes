@@ -178,7 +178,7 @@
                       <tr  class="text-center" style="font-size:12px;">
                       
                       <td align="left">DESCRIPCION</td>
-                      <td  align="right">CANTIDAD</td>
+                      <td  align="center">CANTIDAD</td>
                       <td  align="right">PRECIO UNITARIO</td>
                       <td  align="right">TOTAL</td>
                       </tr>
@@ -199,7 +199,7 @@
                     <tr style="font-size:12px;">
                       
                       <td><div align="left"><t t-esc="o.product_id.name"/></div></td>
-                      <td><div align="right"><t t-esc="o.integer_format(o.quantity)"/></div></td>
+                      <td><div align="center"><t t-esc="o.integer_format(o.quantity)"/></div></td>
                       <td><div align="right"><t t-esc="o.float_format(o.fact_div_line(o.price_unit))"/></div></td>
                      
                       <td><div align="right"><t t-esc="o.float_format(o.fact_div_line(o.price_subtotal))"/>
