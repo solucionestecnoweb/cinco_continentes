@@ -122,7 +122,6 @@
               </t>
 
               
-
                <!-- modelo de debito -->
                <t t-elif="docs.move_type== 'out_receipt' ">
 
