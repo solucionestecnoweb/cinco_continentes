@@ -85,10 +85,10 @@
                     
                       <tr  class="text-center" style="font-size:12px;">
                       
-                      <td align="left">DESCRIPCION</td>
-                      <td align="center">CANTIDAD</td>
-                      <td align="right">PRECIO UNITARIO</td>
-                      <td align="right">TOTAL</td>
+                      <td>DESCRIPCION</td>
+                      <td>CANTIDAD</td>
+                      <td>PRECIO UNITARIO</td>
+                      <td>TOTAL</td>
                       </tr>
               
           </thead>
