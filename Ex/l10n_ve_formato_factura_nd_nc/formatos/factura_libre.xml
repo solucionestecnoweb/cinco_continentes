@@ -138,32 +138,32 @@
                      
                       <tr style="font-size:13px;">
                       <td >FECHA DE EMISIÔN:</td>
-                      <td><t t-esc="docs.formato_fecha(docs.invoice_date)"/></td>
+                      <td align="left"><t t-esc="docs.formato_fecha(docs.invoice_date)"/></td>
 
                       </tr>
 
               
                       <tr style="font-size:13px;">
                       <td >CLIENTE:</td>
-                      <td><t t-esc="docs.partner_id.name"/></td>
+                      <td align="left"><t t-esc="docs.partner_id.name"/></td>
                       </tr> 
 
               
                       <tr style="font-size:13px;">
                       <td>RIF</td>
-                        <td><t t-esc="docs.partner_id.doc_type"/>&amp;nbsp;<t t-esc="docs.partner_id.vat"/></td>
+                        <td align="left"><t t-esc="docs.partner_id.doc_type"/>&amp;nbsp;<t t-esc="docs.partner_id.vat"/></td>
                       </tr>
                       
 
                       <tr style="font-size:13px;">
                       <td >TELEFONO:</td>
-                      <td><t t-esc="docs.partner_id.phone"/></td>
+                      <td align="left"><t t-esc="docs.partner_id.phone"/></td>
                       </tr>
 
 
                       <tr style="font-size:13px;">
                       <td>DOMICILIO FISCAL:</td>
-                      <td><t t-esc="docs.partner_id.street"/>;<t t-esc="docs.partner_id.street2"/></td>
+                      <td align="left"><t t-esc="docs.partner_id.street"/>;<t t-esc="docs.partner_id.street2"/></td>
                        </tr>
 
                       
@@ -177,7 +177,7 @@
                     
                       <tr  class="text-center" style="font-size:12px;">
                       
-                      <td >DESCRIPCION</td>
+                      <td align="left" >DESCRIPCION</td>
                       <td >CANTIDAD</td>
                       <td align="right" >PRECIO UNITARIO</td>
                       <td align="right" >TOTAL</td>
