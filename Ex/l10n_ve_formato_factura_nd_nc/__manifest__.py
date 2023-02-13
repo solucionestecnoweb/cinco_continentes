@@ -2,7 +2,7 @@
 {
     'name': "Formatos de Factura, NC, ND de forma Libre 5 continente",
 
-    'summary': """Formatos de Factura, NC, ND de forma Libre para 5 Continente""",
+    'summary': """Formatos de Factura, NC, ND de forma Libre para 5 Continente.""",
 
     'description': """
        Formatos de Factura, NC, ND de forma Libre para 5 continente.
