@@ -105,7 +105,7 @@
 
                       <tr style="font-size:13px;">
                       <td >RIF:</td>
-                      <td><t t-esc="docs.doc_cedula(docs.partner_id.id)"/></td>
+                       <td><t t-esc="docs.partner_id.doc_type"/>&amp;nbsp;<t t-esc="docs.partner_id.vat"/></td>
                       </tr>
                 
                       <tr style="font-size:13px;">
@@ -152,7 +152,7 @@
               
                       <tr style="font-size:13px;">
                       <td>RIF</td>
-                      <td><t t-esc="docs.doc_cedula(docs.partner_id.id)"/></td>
+                      <td><t t-esc="docs.partner_id.doc_type"/>&amp;nbsp;<t t-esc="docs.partner_id.vat"/></td>
                       </tr>
                       
 
