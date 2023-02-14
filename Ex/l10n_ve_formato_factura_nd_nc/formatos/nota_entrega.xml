@@ -47,14 +47,14 @@
                     </tr> 
                       
                       <tr style="font-size:13px;">
-                      <td >FECHA DE EMISIÔN:</td>
-                      <td ><div  align="left" ><t t-esc="docs.formato_fecha(docs.invoice_date)"/></div></td>
+                      <td  >FECHA DE EMISIÔN:</td>
+                      <td  colspan="2"><div  align="left" ><t t-esc="docs.formato_fecha(docs.invoice_date)"/></div></td>
                       <td width="350"></td>
                       
                       </tr>
 
               
-                      <tr style="font-size:13px;" colspan="2">
+                      <tr style="font-size:13px;">
                       <td >CLIENTE:</td>
                       <td ><div  align="left" ><t t-esc="docs.partner_id.name"/></div></td>
                       <td width="350"></td>
