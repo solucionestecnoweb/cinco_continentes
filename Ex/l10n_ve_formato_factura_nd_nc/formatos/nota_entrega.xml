@@ -38,8 +38,8 @@
                  
              <tr style="font-size:10px;">
 
-               <div class="col-2"/>
-               <div class="col-3 text-left">
+         <!--      <div class="col-2"/>
+               <div class="col-3 text-left"> -->
 
                     <tr  width="15">
                     <td colspan="3" align="right">NOTA DE ENTREGA:&amp;nbsp;<t t-esc="docs.delivery_note_next_number"/></td>
@@ -50,8 +50,8 @@
                     </tr> 
                       
                       <tr style="font-size:13px;">
-                      <td  >FECHA DE EMISIÔN:</td>
-                      <td ><div ><t t-esc="docs.formato_fecha(docs.invoice_date)"/></div></td>
+                      <td><div>FECHA DE EMISIÔN:</div></td>
+                      <td ><div class="col-2 text-left" ><t t-esc="docs.formato_fecha(docs.invoice_date)"/></div></td>
                      
                       </tr>
 
@@ -89,7 +89,7 @@
                       
                        </tr>
 
-                </div>
+             
                 </tr>
 
               </table>
