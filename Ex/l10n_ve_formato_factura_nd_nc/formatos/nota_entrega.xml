@@ -54,7 +54,7 @@
 
               
                       <tr style="font-size:13px;">
-                      <td >CLIENTE:</br><t t-esc="docs.partner_id.name"/></td>
+                      <td >CLIENTE:<br/><t t-esc="docs.partner_id.name"/></td>
                       <td align="left" ><t t-esc="docs.partner_id.name"/></td>
                       </tr> 
 
