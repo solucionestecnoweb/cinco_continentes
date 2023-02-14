@@ -54,9 +54,9 @@
                       </tr>
 
               
-                      <tr style="font-size:13px;">
-                      <td >CLIENTE:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <t t-esc="docs.partner_id.name"/></td>
-                      <td ><div  align="left" ><t t-esc="docs.partner_id.name"/></div></td>
+                      <tr style="font-size:13px;" colspan="3">
+                      <td >CLIENTE:</td>
+                      <td ><div  align="right" ><t t-esc="docs.partner_id.name"/></div></td>
                       <td width="350"></td>
                       </tr> 
 
