@@ -86,46 +86,46 @@
                   <tr style="font-size:10px;">
 
          
-                       <tr  width="15">
+                       <tr  width="40">
                        <td colspan="3" align="right" style="font-size:20px" >NOTA DE CREDITO&amp;nbsp;<t t-esc="docs.invoice_number_next"/></td>
                        </tr>
                       
-                      <tr  width="15">
+                      <tr  width="40">
                       <td colspan="3" align="right">FACTURA AFECTADA:&amp;nbsp;<t t-esc="docs.reason"/></td>
                       </tr> 
 
 
                       
                       <tr style="font-size:13px;">
-                      <td>FECHA DE EMISION:</td>
-                      <td align="left" ><t t-esc="docs.formato_fecha(docs.invoice_date)"/></td>
-                      <td width="400"></td>
+                      <td  colspan="2" >FECHA DE EMISION:</td>
+                      <td><t t-esc="docs.formato_fecha(docs.invoice_date)"/></td>
+                      <td></td>
                       </tr>
                       
                       <tr style="font-size:13px;">
-                      <td>CLIENTE:</td>
-                      <td align="left" ><t t-esc="docs.partner_id.name"/></td>
-                      <td width="400"></td>
+                      <td colspan="2">CLIENTE:</td>
+                      <td><t t-esc="docs.partner_id.name"/></td>
+                      <td></td>
                       </tr> 
 
 
                       <tr style="font-size:13px;">
-                      <td >RIF:</td>
-                       <td align="left" ><t t-esc="docs.partner_id.doc_type"/>&amp;nbsp;<t t-esc="docs.partner_id.vat"/></td>
-                       <td width="400"></td>
+                      <td colspan="2" >RIF:</td>
+                      <td ><t t-esc="docs.partner_id.doc_type"/>&amp;nbsp;<t t-esc="docs.partner_id.vat"/></td>
+                      <td></td>
                       </tr>
                 
                       <tr style="font-size:13px;">
-                      <td >TELEFONO:</td>
+                      <td colspan="2">TELEFONO:</td>
                       <td><t t-esc="docs.partner_id.phone"/></td>
-                      <td width="400"></td>
+                      <td></td>
                       </tr>
 
                       <tr style="font-size:13px;">
-                      <td>DOMICILIO FISCAL:</td>
-                      <td align="left" ><t t-esc="docs.partner_id.street"/>;<t t-esc="docs.partner_id.street2"/></td>
-                      <td width="400"></td>
-                       </tr>
+                      <td colspan="2">DOMICILIO FISCAL:</td>
+                      <td><t t-esc="docs.partner_id.street"/>;<t t-esc="docs.partner_id.street2"/></td>
+                      <td></td>
+                      </tr>
 
                   </tr>   
               </t>
@@ -135,48 +135,48 @@
 
                 <tr style="font-size:10px;">
 
-                       <tr  width="15">
+                       <tr  width="40">
                        <td colspan="3" align="right" style="font-size:20px" >NOTA DE DEBITO&amp;nbsp;<t t-esc="docs.invoice_number_next"/></td>
                        </tr>
 
-                      <tr  width="15">
+                      <tr  width="40">
                       <td colspan="3" align="right">FACTURA AFECTADA:&amp;nbsp;<t t-esc="docs.reason"/></td>
                       </tr> 
 
                      
                       <tr style="font-size:13px;">
-                      <td >FECHA DE EMISIÔN:</td>
-                      <td ><t t-esc="docs.formato_fecha(docs.invoice_date)"/></td>
-                      <td width="250"></td>
+                      <td colspan="2" >FECHA DE EMISIÔN:</td>
+                      <td><t t-esc="docs.formato_fecha(docs.invoice_date)"/></td>
+                      <td></td>
 
                       </tr>
 
               
                       <tr style="font-size:13px;">
-                      <td >CLIENTE:</td>
-                      <td align="left" ><t t-esc="docs.partner_id.name"/></td>
-                      <td width="400"></td>
+                      <td colspan="2">CLIENTE:</td>
+                      <td><t t-esc="docs.partner_id.name"/></td>
+                      <td></td>
                       </tr> 
 
               
                       <tr style="font-size:13px;">
-                      <td>RIF</td>
-                      <td align="left" ><t t-esc="docs.partner_id.doc_type"/>&amp;nbsp;<t t-esc="docs.partner_id.vat"/></td>
-                      <td width="400"></td>
+                      <td colspan="2">RIF</td>
+                      <td><t t-esc="docs.partner_id.doc_type"/>&amp;nbsp;<t t-esc="docs.partner_id.vat"/></td>
+                      <td></td>
                       </tr>
                       
 
                       <tr style="font-size:13px;">
-                      <td >TELEFONO:</td>
-                      <td align="left"  ><t t-esc="docs.partner_id.phone"/></td>
-                      <td width="400"></td>
+                      <td colspan="2" >TELEFONO:</td>
+                      <td><t t-esc="docs.partner_id.phone"/></td>
+                      <td></td>
                       </tr>
 
 
                       <tr style="font-size:13px;">
-                      <td>DOMICILIO FISCAL:</td>
-                      <td align="left"  ><t t-esc="docs.partner_id.street"/>;<t t-esc="docs.partner_id.street2"/></td>
-                      <td width="400"></td>
+                      <td colspan="2">DOMICILIO FISCAL:</td>
+                      <td><t t-esc="docs.partner_id.street"/>;<t t-esc="docs.partner_id.street2"/></td>
+                      <td></td>
                       </tr>
 
                       
