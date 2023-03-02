@@ -30,11 +30,11 @@
                 <t t-if="docs.move_type== 'out_invoice' ">
                       <tr style="font-size:10px;">
 
-                      <tr  width="45">
+                      <tr  width="40">
                       <td colspan="3" align="right">FACTURA Nº:&amp;nbsp;<t t-esc="docs.invoice_number_next"/></td>
                       </tr> 
 
-                      <tr  width="45">
+                      <tr  width="40">
                       <td colspan="3" align="right">CONDICION DE PAGO:&amp;nbsp;<t t-esc="docs.invoice_payment_term_id.name"/></td>
                       </tr> 
 
