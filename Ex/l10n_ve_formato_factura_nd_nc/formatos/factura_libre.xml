@@ -67,7 +67,7 @@
                       </tr>
                 
                       <tr style="font-size:13px;" colspan="6" >
-                      <td  >DOMICILIO FISCAL:</td>
+                      <td colspan="3" >DOMICILIO FISCAL:</td>
                       <td colspan="3" ><t t-esc="docs.partner_id.street"/>;<t t-esc="docs.partner_id.street2"/></td>
                     
                       </tr>
