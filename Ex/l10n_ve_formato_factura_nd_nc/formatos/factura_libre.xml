@@ -68,8 +68,8 @@
                 
                       <tr style="font-size:13px;">
                       <td  >DOMICILIO FISCAL:</td>
-                      <td colspan="2" ><t t-esc="docs.partner_id.street"/>;<t t-esc="docs.partner_id.street2"/></td>
-                      <td></td>
+                      <td colspan="3" ><t t-esc="docs.partner_id.street"/>;<t t-esc="docs.partner_id.street2"/></td>
+                    
                       </tr>
 
                        
