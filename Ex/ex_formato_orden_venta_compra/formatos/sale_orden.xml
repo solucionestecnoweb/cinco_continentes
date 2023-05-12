@@ -44,10 +44,10 @@
 					  <tr>
 					    <td width="33,33%">Fecha de la Orden </td>
 					    <td width="33,33%">.</td>
-					    <td width="33,33%">Vendedor</td>
+					    <td width="33,33%">Asesor de Ventas</td>
 					  </tr>
 					  <tr>
-					    <td><t t-esc="docs.date_order"/> </td>
+					    <td><t t-field="docs.date_order"/> </td>
 					   	<td> </td>
 					    <td><t t-esc="docs.user_id.name"/></td>
 					  </tr>
