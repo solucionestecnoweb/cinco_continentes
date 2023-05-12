@@ -93,6 +93,19 @@
                     	Nota:
                     </div>
             	</div>
+            	<div class="footer">
+            		 <div>
+            		 	<t t-esc="docs.company_id.name"/>
+            		 	RIF. J-<t t-esc="docs.company_id.vat"/>
+            		 </div>
+            		 <div>
+            		 	<t t-esc="docs.company_id.street"/> 
+            		 	<t t-esc="docs.company_id.street2"/>
+            		 </div>
+            		 <div>
+            		 	Telf: <t t-esc="docs.company_id.phone"/>
+            		 </div>
+            	</div>
             </t>
         </t>
     </template>
