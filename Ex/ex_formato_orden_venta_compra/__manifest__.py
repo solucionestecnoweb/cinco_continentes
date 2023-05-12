@@ -17,16 +17,7 @@
 
     # always loaded
     'data': [
-        'formatos/sale_order.xml',
-        #'formatos/nota_entrega.xml',
-        #'formatos/account_move_view.xml',
-        #'security/ir.model.access.csv',
-        #'resumen_iva/reporte_view.xml',
-        #'resumen_iva/wizard.xml',
-        #'resumen_municipal/wizard.xml',
-        #'resumen_municipal/reporte_view.xml',
-        #'resumen_islr/wizard.xml',
-        #'resumen_islr/reporte_view.xml',
+        #'formatos/sale_order.xml',
     ],
     'application': True,
     'active':False,
