@@ -17,7 +17,7 @@
                      	</tr>
                      	<t t-set="acum_total" t-value="0"/>
                      	<t t-foreach="docs.order_line" t-as="line">
-                     		<tr style="font-size:13px;">
+                     		<tr style="font-size:13px;" class="table table-striped">
 	                     		<td>
 	                     			<img t-attf-src="data:image/*;base64,{{line.product_id.image_1920}}" style="width:auto; height:50px;"/>
 	                     		</td>
