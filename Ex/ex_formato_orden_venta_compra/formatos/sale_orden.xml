@@ -39,6 +39,12 @@
 	                      	<td colspan="3" align="right" class="oe_subtotal_footer_separator"><t t-esc="docs.currency_id.symbol"/><t t-esc="acum_total"/></td>
                       	</tr>
                     </table>
+                    <div>
+                    	<br/>
+                    	________________
+                    	<br/>
+                    	Nota:
+                    <div>
             	</div>
             </t>
         </t>
