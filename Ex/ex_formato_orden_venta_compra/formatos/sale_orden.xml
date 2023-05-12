@@ -8,7 +8,7 @@
             	<div class="header">
             		<table width="100%">
             			<tr>
-            				<td><img t-attf-src="data:image/*;base64,{{docs.company_id.logo}}" style="width:auto; height:50px;"/> </td>
+            				<td><img t-attf-src="data:image/*;base64,{{docs.company_id.logo}}" style="width:auto; height:100px;"/> </td>
             				<td> </td>
             			</tr>
             		</table>
