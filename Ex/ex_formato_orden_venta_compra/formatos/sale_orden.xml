@@ -7,7 +7,7 @@
             <t t-call="web.basic_layout" >
             	<div class="page">
             		<table width="100%"  class="table table-condensed ">
-                    	<tr style="font-size:13px;">
+                    	<tr>
                       		<td>CLIENTE:</td>
                       		<td>Descripción</td>
                       		<td>Medidas (cm)</td>
@@ -16,12 +16,14 @@
                       		<td>Importe</td>
                      	</tr>
                      	<t t-foreach="docs.order_line" t-as="line">
-                     		<td><t t-esc="line.product_id.default_code"/></td>
-                      		<td><t t-esc="line.product_id.name"/></td>
-                      		<td><t t-esc="line.product_id.name"/></td>
-                      		<td><t t-esc="line.product_id.name"/></td>
-                      		<td><t t-esc="line.product_id.name"/></td>
-                      		<td><t t-esc="line.product_id.name"/></td>
+                     		<tr style="font-size:13px;">
+	                     		<td><t t-esc="line.product_id.image_1920"/></td>
+	                      		<td><t t-esc="line.product_id.name"/></td>
+	                      		<td><t t-esc="line.product_id.name"/></td>
+	                      		<td><t t-esc="line.product_id.product_uom_qty"/></td>
+	                      		<td><t t-esc="line.product_id.price_unit"/></td>
+	                      		<td><t t-esc="line.product_id.price_subtotal"/></td>
+                      		</tr>
                      	</t>
                     </table>
             	</div>
