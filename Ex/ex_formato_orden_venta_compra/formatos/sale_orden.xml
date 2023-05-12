@@ -7,7 +7,7 @@
             <t t-call="web.basic_layout" >
             	<div class="header">
 
-            		<table width="100%" class="table table-bordered">
+            		<table width="100%" > <!--class="table table-bordered" -->
 					  <tr>
 					    <td width="70%"><img t-attf-src="data:image/*;base64,{{docs.company_id.logo}}" style="width:auto; height:100px;"/></td>
 					    <td rowspan="2" align="left">
@@ -33,7 +33,7 @@
 					    </td>
 					  </tr>
 					  <tr>
-					    <td>2</td>
+					    <td>  </td>
 					  </tr>
 					</table>
 
@@ -88,7 +88,7 @@
                     </table>
                     <div>
                     	<br/>
-                    	________________
+                    	_______________________________________
                     	<br/>
                     	Nota:
                     </div>
