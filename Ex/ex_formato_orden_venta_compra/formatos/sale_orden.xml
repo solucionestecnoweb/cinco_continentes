@@ -17,7 +17,9 @@
                      	</tr>
                      	<t t-foreach="docs.order_line" t-as="line">
                      		<tr style="font-size:13px;">
-	                     		<td><t t-esc="line.product_id.image_1920"/></td>
+	                     		<td>
+	                     			<img t-attf-src="data:image/*;base64,{{line.product_id.image_1920}}" style="width:auto; height:70px;"/>
+	                     		</td>
 	                      		<td><t t-esc="line.product_id.name"/></td>
 	                      		<td><t t-esc="line.product_id.name"/></td>
 	                      		<td><t t-esc="line.product_uom_qty"/></td>
