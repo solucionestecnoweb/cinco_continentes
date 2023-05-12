@@ -17,7 +17,7 @@
 
     # always loaded
     'data': [
-        #'formatos/sale_order.xml',
+        'formatos/sale_orden.xml',
     ],
     'application': True,
     'active':False,
