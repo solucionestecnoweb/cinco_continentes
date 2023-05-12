@@ -6,7 +6,16 @@
         <t t-call="web.html_container">
             <t t-call="web.basic_layout" >
             	<div class="page">
-            		Hola
+            		<table width="100%"  class="table table-condensed ">
+                    	<tr style="font-size:13px;">
+                      		<td>CLIENTE:</td>
+                      		<td>Descripción</td>
+                      		<td>Medidas (cm)</td>
+                      		<td>Cantidad</td>
+                      		<td>Precio Unitario</td>
+                      		<td>Importe</td>
+                     	</tr>
+                    </table>
             	</div>
             </t>
         </t>
