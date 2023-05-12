@@ -15,6 +15,14 @@
                       		<td>Precio Unitario</td>
                       		<td>Importe</td>
                      	</tr>
+                     	<t t-foreach="docs.order_line" t-as="line">
+                     		<td><t t-esc="line.product_id.default_code"/></td>
+                      		<td><t t-esc="line.product_id.name"/></td>
+                      		<td><t t-esc="line.product_id.name"/></td>
+                      		<td><t t-esc="line.product_id.name"/></td>
+                      		<td><t t-esc="line.product_id.name"/></td>
+                      		<td><t t-esc="line.product_id.name"/></td>
+                     	</t>
                     </table>
             	</div>
             </t>
