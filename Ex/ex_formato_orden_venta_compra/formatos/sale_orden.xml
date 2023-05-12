@@ -20,9 +20,9 @@
 	                     		<td><t t-esc="line.product_id.image_1920"/></td>
 	                      		<td><t t-esc="line.product_id.name"/></td>
 	                      		<td><t t-esc="line.product_id.name"/></td>
-	                      		<td><t t-esc="line.product_id.product_uom_qty"/></td>
-	                      		<td><t t-esc="line.product_id.price_unit"/></td>
-	                      		<td><t t-esc="line.product_id.price_subtotal"/></td>
+	                      		<td><t t-esc="line.product_uom_qty"/></td>
+	                      		<td><t t-esc="line.price_unit"/></td>
+	                      		<td><t t-esc="line.price_subtotal"/></td>
                       		</tr>
                      	</t>
                     </table>
