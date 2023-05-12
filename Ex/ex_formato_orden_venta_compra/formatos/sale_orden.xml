@@ -7,7 +7,7 @@
             <t t-call="web.basic_layout" >
             	<div class="header">
 
-            		<table width="200" >
+            		<table width="100%" >
 					  <tr>
 					    <td><img t-attf-src="data:image/*;base64,{{docs.company_id.logo}}" style="width:auto; height:100px;"/></td>
 					    <td rowspan="2" align="right">
