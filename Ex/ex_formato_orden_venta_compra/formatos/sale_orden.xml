@@ -10,7 +10,7 @@
             		<table width="100%" class="table table-bordered">
 					  <tr>
 					    <td width="70%"><img t-attf-src="data:image/*;base64,{{docs.company_id.logo}}" style="width:auto; height:100px;"/></td>
-					    <td rowspan="2" align="right">
+					    <td rowspan="2" align="left">
 					    	<div>
 					    		Presupuesto # <t t-esc="docs.name"/>
 					    	</div>
