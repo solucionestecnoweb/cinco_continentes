@@ -35,8 +35,8 @@
                       		</tbody>
                      	</t>
                      	<tr style="font-size:13px;">
-	                     	<td colspan="3" align="right">Total:</td>
-	                      	<td colspan="3" align="right"><t t-esc="docs.currency_id.symbol"/><t t-esc="acum_total"/></td>
+	                     	<td colspan="3" align="right" class="oe_subtotal_footer_separator">Total:</td>
+	                      	<td colspan="3" align="right" class="oe_subtotal_footer_separator"><t t-esc="docs.currency_id.symbol"/><t t-esc="acum_total"/></td>
                       	</tr>
                     </table>
             	</div>
