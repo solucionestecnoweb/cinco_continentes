@@ -17,7 +17,7 @@
                      	</tr>
                      	<t t-set="acum_total" t-value="0"/>
                      	<t t-foreach="docs.order_line" t-as="line">
-                     		<tbody>
+                     		
                      		<tr style="font-size:13px;">
 	                     		<td>
 	                     			<img t-attf-src="data:image/*;base64,{{line.product_id.image_1920}}" style="width:auto; height:50px;"/>
@@ -32,7 +32,7 @@
 	                      			<t t-set="acum_total" t-value="acum_total+line.price_subtotal"/>
 	                      		</td>
                       		</tr>
-                      		</tbody>
+                      		
                      	</t>
                      	<tr style="font-size:13px;" class="table table-condensed">
 	                     	<td colspan="3" align="right" class="oe_subtotal_footer_separator">Total:</td>
