@@ -10,7 +10,27 @@
             		<table width="200" >
 					  <tr>
 					    <td><img t-attf-src="data:image/*;base64,{{docs.company_id.logo}}" style="width:auto; height:100px;"/></td>
-					    <td rowspan="2">1</td>
+					    <td rowspan="2" align="right">
+					    	<div>
+					    		Presupuesto # <t t-esc="docs.name"/>
+					    	</div>
+					    	<div>
+					    		<t t-esc="docs.partner_id.name"/>
+					    	</div>
+					    	<div>
+					    		<t t-esc="docs.partner_id.vat"/>
+					    	</div>
+					    	<div>
+					    		<t t-esc="docs.partner_id.phone"/>
+					    	</div>
+					    	<div>
+					    		<t t-esc="docs.partner_id.street"/>
+					    		<t t-esc="docs.partner_id.street2"/>
+					    	</div>
+					    	<div>
+					    		<t t-esc="docs.partner_id.email"/>
+					    	</div>
+					    </td>
 					  </tr>
 					  <tr>
 					    <td>2</td>
