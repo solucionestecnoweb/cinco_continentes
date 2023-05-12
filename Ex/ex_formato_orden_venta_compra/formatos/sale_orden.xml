@@ -8,7 +8,7 @@
             	<div class="page">
             		<table width="100%"  class="table table-condensed ">
                     	<tr>
-                      		<td>CLIENTE:</td>
+                      		<td> </td>
                       		<td>Descripción</td>
                       		<td>Medidas (cm)</td>
                       		<td>Cantidad</td>
@@ -21,7 +21,7 @@
 	                     			<img t-attf-src="data:image/*;base64,{{line.product_id.image_1920}}" style="width:auto; height:70px;"/>
 	                     		</td>
 	                      		<td><t t-esc="line.product_id.name"/></td>
-	                      		<td><t t-esc="line.product_id.name"/></td>
+	                      		<td><t t-esc="line.product_id.measures"/></td>
 	                      		<td><t t-esc="line.product_uom_qty"/></td>
 	                      		<td><t t-esc="line.price_unit"/></td>
 	                      		<td><t t-esc="line.price_subtotal"/></td>
