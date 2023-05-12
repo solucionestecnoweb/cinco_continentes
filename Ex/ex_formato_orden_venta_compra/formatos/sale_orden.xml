@@ -94,15 +94,15 @@
                     </div>
             	</div>
             	<div class="footer">
-            		 <div>
+            		 <div style="font-size:10px;" align="center">
             		 	<t t-esc="docs.company_id.name"/>
             		 	RIF. J-<t t-esc="docs.company_id.vat"/>
             		 </div>
-            		 <div>
+            		 <div style="font-size:10px;" align="center">
             		 	<t t-esc="docs.company_id.street"/> 
             		 	<t t-esc="docs.company_id.street2"/>
             		 </div>
-            		 <div>
+            		 <div style="font-size:10px;" align="center">
             		 	Telf: <t t-esc="docs.company_id.phone"/>
             		 </div>
             	</div>
