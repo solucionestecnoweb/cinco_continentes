@@ -6,7 +6,7 @@
         <t t-call="web.html_container">
             <t t-call="web.basic_layout" >
             	<div class="page">
-            		<table width="100%"  class="table table-condensed ">
+            		<table width="100%"  class="table table-striped">
                     	<tr>
                       		<td> </td>
                       		<td>Descripción</td>
@@ -17,8 +17,8 @@
                      	</tr>
                      	<t t-set="acum_total" t-value="0"/>
                      	<t t-foreach="docs.order_line" t-as="line">
-                     		<tbody class="table table-striped">
-                     		<tr style="font-size:13px;" class="table table-striped">
+                     		<tbody>
+                     		<tr style="font-size:13px;">
 	                     		<td>
 	                     			<img t-attf-src="data:image/*;base64,{{line.product_id.image_1920}}" style="width:auto; height:50px;"/>
 	                     		</td>
@@ -34,7 +34,7 @@
                       		</tr>
                       		</tbody>
                      	</t>
-                     	<tr style="font-size:13px;">
+                     	<tr style="font-size:13px;" class="table table-condensed">
 	                     	<td colspan="3" align="right" class="oe_subtotal_footer_separator">Total:</td>
 	                      	<td colspan="3" align="right" class="oe_subtotal_footer_separator"><t t-esc="docs.currency_id.symbol"/><t t-esc="acum_total"/></td>
                       	</tr>
