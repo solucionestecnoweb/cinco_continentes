@@ -26,7 +26,9 @@
 	                      		<td><t t-esc="line.product_uom_qty"/></td>
 	                      		<td><t t-esc="line.price_unit"/></td>
 	                      		<td>
-	                      			<t t-esc="line.price_subtotal"/><t t-set="acum_total" t-value="acum_total+line.price_subtotal"/>
+	                      			<t t-esc="docs.currency_id.symbol"/>
+	                      			<t t-esc="line.price_subtotal"/>
+	                      			<t t-set="acum_total" t-value="acum_total+line.price_subtotal"/>
 	                      		</td>
                       		</tr>
                      	</t>
@@ -36,7 +38,7 @@
 	                      	<td></td>
 	                      	<td></td>
 	                      	<td></td>
-	                      	<td><t t-esc="acum_total"/></td>
+	                      	<td><t t-esc="docs.currency_id.symbol"/><t t-esc="acum_total"/></td>
                       	</tr>
                     </table>
             	</div>
