@@ -13,6 +13,7 @@
 					    <td rowspan="2" align="left">
 					    	<div>
 					    		Presupuesto # <t t-esc="docs.name" style="color: #AD0000;"/>
+                  <p style="color: #AD0000;" t-field="docs.date_order"/>
 					    	</div>
 					    	<div>
 					    		<t t-esc="docs.partner_id.name"/>
