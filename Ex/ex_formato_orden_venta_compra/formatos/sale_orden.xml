@@ -47,7 +47,7 @@
 					    <td width="33,33%">Asesor de Ventas</td>
 					  </tr>
 					  <tr>
-					    <td><p t-field="docs.date_order"/> </td>
+					    <td><p style="color: #AD0000;" t-field="docs.date_order"/> </td>
 					   	<td><p t-field="docs.validity_date"/> </td>
 					    <td><t t-esc="docs.user_id.name"/></td>
 					  </tr>
