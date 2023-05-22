@@ -12,7 +12,7 @@
 					    <td width="70%"><img t-attf-src="data:image/*;base64,{{docs.company_id.logo}}" style="width:auto; height:100px;"/></td>
 					    <td rowspan="2" align="left">
 					    	<div>
-					    		Presupuesto # <t t-esc="docs.name"/>
+					    		Presupuesto # <spam t-esc="docs.name" style="color: #AD0000;"/>
 					    	</div>
 					    	<div>
 					    		<t t-esc="docs.partner_id.name"/>
@@ -42,7 +42,7 @@
             		<br/><br/><br/><br/>
             		<table width="100%" >
 					  <tr>
-					    <td width="33,33%">Fecha de la Orden </td>
+					    <td width="33,33%">Fecha de emisión</td>
 					    <td width="33,33%">Vencimiento</td>
 					    <td width="33,33%">Asesor de Ventas</td>
 					  </tr>
@@ -59,7 +59,7 @@
                       		<td>Descripción</td>
                       		<td>Medidas (cm)</td>
                       		<td>Cantidad</td>
-                      		<td>Precio Unitario</td>
+                      		<td>Precio unidad</td>
                       		<td>Importe</td>
                      	</tr>
                      	<t t-set="acum_total" t-value="0"/>
