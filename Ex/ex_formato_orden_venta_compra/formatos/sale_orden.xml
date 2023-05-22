@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data> 
+
+  	<template id="report_sale_order">
+        <t t-call="web.html_container">
+            <t t-call="web.basic_layout" >
+            	<div class="header">
+
+            		<table width="100%" > <!--class="table table-bordered" -->
+					  <tr>
+					    <td width="70%"><img t-attf-src="data:image/*;base64,{{docs.company_id.logo}}" style="width:auto; height:100px;"/></td>
+					    <td rowspan="2" align="left">
+					    	<div>
+					    		Presupuesto # <t t-esc="docs.name"/>
+					    	</div>
+					    	<div>
+					    		<t t-esc="docs.partner_id.name"/>
+					    	</div>
+					    	<div>
+					    		<t t-esc="docs.partner_id.vat"/>
+					    	</div>
+					    	<div>
+					    		<t t-esc="docs.partner_id.phone"/>
+					    	</div>
+					    	<div>
+					    		<t t-esc="docs.partner_id.street"/>
+					    		<t t-esc="docs.partner_id.street2"/>
+					    	</div>
+					    	<div>
+					    		<t t-esc="docs.partner_id.email"/>
+					    	</div>
+					    </td>
+					  </tr>
+					  <tr>
+					    <td>  </td>
+					  </tr>
+					</table>
+
+            	</div>
+            	<div class="page">
+            		<br/><br/><br/><br/>
+            		<table width="100%" >
+					  <tr>
+					    <td width="33,33%">Fecha de la Orden </td>
+					    <td width="33,33%">Vencimiento</td>
+					    <td width="33,33%">Asesor de Ventas</td>
+					  </tr>
+					  <tr>
+					    <td><p t-field="docs.date_order"/> </td>
+					   	<td><p t-field="docs.validity_date"/> </td>
+					    <td><t t-esc="docs.user_id.name"/></td>
+					  </tr>
+					</table>
+					<br/>
+            		<table width="100%"  class="table table-striped">
+                    	<tr>
+                      		<td> </td>
+                      		<td>Descripción</td>
+                      		<td>Medidas (cm)</td>
+                      		<td>Cantidad</td>
+                      		<td>Precio Unitario</td>
+                      		<td>Importe</td>
+                     	</tr>
+                     	<t t-set="acum_total" t-value="0"/>
+                     	<t t-foreach="docs.order_line" t-as="line">
+                     		
+                     		<tr style="font-size:13px;">
+	                     		<td>
+	                     			<img t-attf-src="data:image/*;base64,{{line.product_id.image_1920}}" style="width:auto; height:50px;"/>
+	                     		</td>
+	                      		<td><t t-esc="line.product_id.name"/></td>
+	                      		<td><t t-esc="line.product_id.measures"/></td>
+	                      		<td><t t-esc="line.product_uom_qty"/></td>
+	                      		<td align="right"><t t-esc="line.price_unit"/></td>
+	                      		<td align="right">
+	                      			<t t-esc="docs.currency_id.symbol"/>
+	                      			<t t-esc="line.price_subtotal"/>
+	                      			<t t-set="acum_total" t-value="acum_total+line.price_subtotal"/>
+	                      		</td>
+                      		</tr>
+                      		
+                     	</t>
+                     	<tr style="font-size:13px;" class="table table-condensed">
+	                     	<td colspan="3" align="right" class="oe_subtotal_footer_separator">Total:</td>
+	                      	<td colspan="3" align="right" class="oe_subtotal_footer_separator"><t t-esc="docs.currency_id.symbol"/><t t-esc="acum_total"/></td>
+                      	</tr>
+                    </table>
+                    <div>
+                    	<br/>
+                    	_______________________________________
+                    	<br/>
+                    	Nota:
+                    </div>
+            	</div>
+            	<div class="footer">
+            		 <div style="font-size:10px;" align="center">
+            		 	<t t-esc="docs.company_id.name"/>
+            		 	RIF. J-<t t-esc="docs.company_id.vat"/>
+            		 </div>
+            		 <div style="font-size:10px;" align="center">
+            		 	<t t-esc="docs.company_id.street"/> 
+            		 	<t t-esc="docs.company_id.street2"/>
+            		 </div>
+            		 <div style="font-size:10px;" align="center">
+            		 	Telf: <t t-esc="docs.company_id.phone"/>
+            		 </div>
+            	</div>
+            </t>
+        </t>
+    </template>
+  	<report
+        id="sale_order_cinco"
+        model="sale.order"
+        string="Presupuesto / Pedidos de clientes"
+        report_type="qweb-pdf"
+        name="ex_formato_orden_venta_compra.report_sale_order"
+        file="ex_formato_orden_venta_compra.report_sale_order"
+        />
+  </data>
+</odoo>
