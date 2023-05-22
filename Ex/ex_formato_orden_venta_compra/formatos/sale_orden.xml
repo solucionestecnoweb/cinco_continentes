@@ -12,7 +12,7 @@
 					    <td width="70%"><img t-attf-src="data:image/*;base64,{{docs.company_id.logo}}" style="width:auto; height:100px;"/></td>
 					    <td rowspan="2" align="left">
 					    	<div>
-					    		Presupuesto # <p t-esc="docs.name" style="color: #AD0000;"/>
+					    		Presupuesto # <spam t-esc="docs.name" style="color: #AD0000;"/>
 					    	</div>
 					    	<div>
 					    		<t t-esc="docs.partner_id.name"/>
